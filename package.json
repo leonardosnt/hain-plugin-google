@@ -1,0 +1,18 @@
+{
+  "name": "hain-plugin-google",
+  "version": "1.0.0",
+  "description": "A simple google search plugin for Hain",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonardosnt/hain-plugin-google.git"
+  },
+  "author": "Leonardosnt",
+  "license": "MIT",
+  "hain": {
+    "prefix": "/g",
+    "usage": "/g something",
+    "icon": "#fa fa-google",
+    "redirect": "/g "
+  }
+}
