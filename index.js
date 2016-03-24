@@ -4,7 +4,7 @@ module.exports = (pluginContext) => {
   const shell = pluginContext.shell;
 
   function search(query, res) {
-		const query_trim = query.trim();
+    const query_trim = query.trim();
 
     if (query_trim.length == 0) {
       return;
