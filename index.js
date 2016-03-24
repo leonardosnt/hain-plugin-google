@@ -1,13 +1,13 @@
-'use strict';
+'use strict'
 
 module.exports = (pluginContext) => {
-  const shell = pluginContext.shell;
+  const shell = pluginContext.shell
 
-  function search(query, res) {
-    const query_trim = query.trim();
+  function search (query, res) {
+    const query_trim = query.trim()
 
-    if (query_trim.length == 0) {
-      return;
+    if (query_trim.length === 0) {
+      return
     }
 
     res.add({
@@ -15,16 +15,15 @@ module.exports = (pluginContext) => {
       payload: 'open',
       title: query_trim,
       desc: 'Search on Google.com'
-    });
+    })
   }
 
-  function execute(id, payload) {
+  function execute (id, payload) {
     if (payload !== 'open') {
-      return;
+      return
     }
-
-    shell.openExternal(`http://www.google.com/search?q=${id}`);
+    shell.openExternal(`http://www.google.com/search?q=${id}`)
   }
 
-  return { search, execute };
-};
+  return { search, execute }
+}
