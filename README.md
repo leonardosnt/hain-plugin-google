@@ -1,6 +1,6 @@
 # hain-plugin-google
 
-A simple google search plugin for [Hain](https://github.com/appetizermonster/hain)
+A simple [Hain](https://github.com/appetizermonster/hain) plugin for searching on Google.
 
 # Install
 Open Hain and type
